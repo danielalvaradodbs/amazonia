@@ -19,7 +19,7 @@ const imagenVisible = ( input, image ) => {
         if( !visible ) {
             return image.setAttribute(`style`, `display: none`);
         }
-        console.log('funcion');
+        
         return image.setAttribute(`style`, ``);
 
     });
