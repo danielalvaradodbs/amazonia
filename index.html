@@ -8,20 +8,27 @@
 </head>
 <body>
 
-    <div style="height: 500px;">
-        <img src="./assets/diversidadCulturalMapa.png" class="imgDiversidadCultural" alt="" />
-        <img src="./assets/mapaBaseDiversidadCultural.png" class="imgDiversidadCultural2" alt="" style="display: none;"/>
-        <img src="./assets/pueblosIndigenasGobierno.png" class="imgPueblosIndigenasGobierno" alt="" style="display: none;"/>
-
+    <div class="contentImages">
+        <img src="./assets/PresionesAmenazas/ImageBase.png" class="imgBasePA" alt="" />
+        <img src="./assets/PresionesAmenazas/PA_mineria.png" class="imgMineriaPA" alt="" style="display: none;"/>
+        <img src="./assets/PresionesAmenazas/PA_petroleo.png" class="imgPetroleoPA" alt="" style="display: none;"/>
+        <img src="./assets/PresionesAmenazas/PA_hidroelectricas.png" class="imgHidroelectricaPA" alt="" style="display: none;"/>
+        <img src="./assets/PresionesAmenazas/PA_deforestacion2018.png" class="imgDeforestacioPA" alt="" style="display: none;"/>
     </div>
-    <br>
     
-    <input type="checkbox" id="diversidadCultural" class="diversidadCultura2" >
-    <label for="diversidadCultural">Diversidad cultura</label>
+    <div class="inputMaps">
+        <input type="checkbox" id="mineriaPA" class="mineriaPA" >
+        <label for="mineriaPA">Minería</label>
 
-    <input type="checkbox" id="pueblosIndigenasGobierno" class="pueblosIndigenasGobierno" >
-    <label for="pueblosIndigenasGobierno">Pueblos Indigenas</label>
-    
+        <input type="checkbox" id="petroleoPA" class="petroleoPA" >
+        <label for="petroleoPA">Petróleo</label>
+
+        <input type="checkbox" id="hidroelectricaPA" class="hidroelectricaPA" >
+        <label for="hidroelectricaPA">Hidroeléctricas</label>
+
+        <input type="checkbox" id="deforestacioPA" class="deforestacioPA" >
+        <label for="deforestacioPA">Deforestación 2018</label>
+    </div>
 </body>
 
 <script src="main.js"></script>
