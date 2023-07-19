@@ -2,36 +2,29 @@
 
 // const buttonDiversidadCultural = document.querySelector('.diversidadCultura');
 const buttonDiversidadCultural2 = document.querySelector('.diversidadCultura2');
+const buttonPueblosIndigenasGobierno = document.querySelector('.pueblosIndigenasGobierno');
 
-const imgDiversidadCultural = document.querySelector('.imgDiversidadCultural');
+// const imgDiversidadCultural = document.querySelector('.imgDiversidadCultural');
 const imgDiversidadCultural2 = document.querySelector('.imgDiversidadCultural2');
+const imgPueblosIndigenasGobierno = document.querySelector('.imgPueblosIndigenasGobierno');
 
 
-let visible = false;
-let visible2 = false;
+const imagenVisible = ( button, image ) => {
 
-// buttonDiversidadCultural.addEventListener( 'click', () => {
+    let visible = false;
+    button.addEventListener('click', () => {
 
-//     visible = !visible;
+        visible = !visible;
 
-//     if( visible ) {
-//         imgDiversidadCultural.setAttribute(`style`, `display: none`);
-//     } else {
-//         imgDiversidadCultural.setAttribute(`style`, ``);
-//     }
+        if( !visible ) {
+            return image.setAttribute(`style`, `display: none`);
+        }
+        console.log('funcion');
+        return image.setAttribute(`style`, ``);
 
+    });
 
-//     console.log('Hola mundo');
+}
 
-// });
-
-buttonDiversidadCultural2.addEventListener( 'click', () => {
-
-    visible2 = !visible2;
-
-    if( visible2 ) {
-        imgDiversidadCultural2.setAttribute(`style`, ``);
-    } else {
-        imgDiversidadCultural2.setAttribute(`style`, `display: none`);
-    };
-});
+imagenVisible( buttonDiversidadCultural2, imgDiversidadCultural2 );
+imagenVisible( buttonPueblosIndigenasGobierno, imgPueblosIndigenasGobierno );
