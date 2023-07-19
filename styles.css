@@ -5,7 +5,7 @@ body {
     display:block;
     position: relative;
 }
-
+ 
 .contentImages .imgBasePA {
     position: relative;
     z-index: 1;
@@ -36,5 +36,44 @@ body {
 }
 
 .inputMaps {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    max-width: 540px;
+    padding: 10px 30px;
+}
+
+.inputMaps .inputLabel {
+    display: flex;
+    margin: 10px 0 0 0;
+    width: 33%;
+    align-items: center;
+}
+
+.inputMaps .inputLabel input {
+    appearance: none;
+    border: 1px solid #D0BCA4!important;
+    background: #ffffff!important;
+    width: 24px;
+    height: 24px;
+    margin: 0;
+    margin-right: 8px;
+}
+.inputMaps .inputLabel input:checked {
+    appearance: none;
+    border: 1px solid #D0BCA4!important;
+    background: url(../assets/checkMap.svg) left top #3994A0!important;
+    width: 24px;
+    height: 24px;
+}
+.inputMaps .inputLabel label {
+    color: #3994A0;
+    font-family: Barlow Condensed;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
 }

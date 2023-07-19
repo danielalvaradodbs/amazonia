@@ -27,7 +27,6 @@ const imagenVisible = ( input, image ) => {
         return image.setAttribute(`style`, ``);
 
     });
-
 }
 
 /* imagen visible */
