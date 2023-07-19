@@ -9,10 +9,10 @@ const imgDiversidadCultural2 = document.querySelector('.imgDiversidadCultural2')
 const imgPueblosIndigenasGobierno = document.querySelector('.imgPueblosIndigenasGobierno');
 
 
-const imagenVisible = ( button, image ) => {
+const imagenVisible = ( input, image ) => {
 
     let visible = false;
-    button.addEventListener('click', () => {
+    input.addEventListener('click', () => {
 
         visible = !visible;
 
